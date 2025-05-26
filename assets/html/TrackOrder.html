@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../logo.png" type="image/webp">
+    <title>Track Orders </title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.encoded/0.0.9/Polyline.encoded.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="../css/TrackOrder.css">
+    <link rel="stylesheet" href="../css/Navbar.css">
+</head>
+<body>
+
+    <header class="header" data-header>
+        <div class="container">
+          <h1>
+            <a href="Index.html" class="logo">
+              <img src="../../logo.png" alt="DeliverEase Logo" class="logo-img">
+              <span id="logo-name">DeliverEase</span>
+            </a>
+          </h1>
+    
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="Index.html" class="logo">DeliverEase</a>
+              <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+    
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="Index.html#home" class="navbar-link" data-nav-link>
+                  <span>Home</span>
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="Index.html#about" class="navbar-link" data-nav-link>
+                  <span>About Us</span>
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="Index.html#service" class="navbar-link" data-nav-link>
+                  <span>Services</span>
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+              </li>
+    
+              <li class="navbar-item highlight">
+                <a href="OrderPage.html" class="navbar-link" data-nav-link>
+                  <span>Place Order</span>
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+              </li>
+    
+              <li class="navbar-item highlight">
+                <a href="TrackOrder.html" class="navbar-link" data-nav-link>
+                  <span>Track Order</span>
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="Index.html#footer" class="navbar-link" data-nav-link>
+                  <span>Contact Us</span>
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="Login.html" class="navbar-link" data-nav-link>
+                  <span>Log out</span>
+                  <ion-icon name="chevron-forward"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </nav>
+    
+          <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+    
+          <div class="overlay" data-nav-toggler data-overlay></div>
+        </div>
+      </header>
+
+    <main>
+    <div class="tracking-container">
+        <div class="heading-container">
+            <h1 class="main-heading">Track Order</h1>
+            <p class="tagline">Follow your order’s path, from dispatch to doorstep</p>
+          </div>
+
+        <div class="search-filter-bar">
+            <input type="text" class="search-input" placeholder="Search by Order ID or Location">
+            <select class="filter-select" id="statusFilter">
+                <option value="all">All Status</option>
+                <option value="in-transit">In Transit</option>
+                <option value="delivered">Delivered</option>
+                <option value="pending">Pending</option>
+            </select>
+            <select class="filter-select" id="dateFilter">
+                <option value="all">All Time</option>
+                <option value="today">Today</option>
+                <option value="week">This Week</option>
+                <option value="month">This Month</option>
+            </select>
+        </div>
+
+       
+        <div class="tabs">
+            <button class="tab active" data-tab="active">Active Orders</button>
+            <button class="tab" data-tab="past">Past Orders</button>
+        </div>
+
+    
+        <div class="orders-grid" id="ordersGrid">
+           
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container" id="footer">
+      <div class="footer-top section">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">DeliverEase</a>
+          <p class="footer-text">
+            At DeliverEase, we believe in going beyond logistics to revolutionize how the world connects and conducts business. 
+            Our mission is to transform the logistics landscape through innovation, dedication, and cutting-edge technology.
+          </p>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com" target="_blank" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Quick Links</p>
+          </li>
+
+          <li>
+            <a href="Index.html#about" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="Index.html#service" class="footer-link">Services</a>
+          </li>
+
+          <li>
+            <a href="OrderPage.html" target="_blank" class="footer-link">Place Order</a>
+          </li>
+
+          <li>
+            <a href="TrackOrder.html" class="footer-link">Track Order</a>
+          </li>
+
+          <li>
+            <a href="Terms.html" target="_blank" class="footer-link">Privacy Policy</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list" id="service-footer">
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="Index.html#service" class="footer-link">Multi-Stop Delivery</a>
+          </li>
+          
+          <li>
+            <a href="Index.html#service" class="footer-link">Road Freight</a>
+          </li>
+
+          <li>
+            <a href="Index.html#service" class="footer-link">Tracking</a>
+          </li>
+
+          <li>
+            <a href="Index.html#service" class="footer-link">Scheduling</a>
+          </li>
+
+          <li>
+            <a href="Index.html#service" class="footer-link">Routing</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li>
+            <a href="tel:+919867469877" class="footer-link">Phone: +919867469877</a>
+          </li>
+
+          <li>
+            <a href="https://www.google.co.in/maps/place/Balaji+Annex/" target="_blank" class="footer-link">
+              Office: B/303, Balaji Annexe Mira Road, Mumbai, Thane:401107
+            </a>
+          </li>
+
+          <li>
+            <a href="Feedback.html" target="_blank" class="footer-link">Feedback</a>
+          </li>
+
+          <li>
+            <a href="Terms.html" target="_blank" class="footer-link">Terms & Condition</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 DeliverEase. All Rights Reserved by <a href="#" class="copyright-link">Anish Tripathi</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+    
+    <template id="trackingModalTemplate">
+        <div class="tracking-details">
+            <div class="tracking-modal">
+                <h2 style="text-align: center;">Order Id: #<span class="order-id" ></span></h2>
+
+                <h3>Route Map</h3>
+                <div class="tracking-map" id="trackingMap" style="width: 100%; height: 400px;"></div>
+
+             
+                <div class="directions-container">
+                    <h3>Step-by-Step Directions</h3>
+                    <div class="route-details" id="routeDetails">
+                     
+                    </div>
+                </div>
+
+               
+                <button class="close-modal" id="closeModal">Close</button>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="../js/TrackOrder.js"></script>
+</body>
+</html>

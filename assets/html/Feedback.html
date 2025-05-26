@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="../css/Feedback.css">
+  <link rel="shortcut icon" href="../../logo.png" type="image/webp">
+  <link rel="stylesheet" href="../css/Navbar.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+  
+  <header class="header" data-header>
+    <div class="container">
+      <h1>
+        <a href="Index.html" class="logo">
+          <img src="../../logo.png" alt="DeliverEase Logo" class="logo-img">
+          <span id="logo-name">DeliverEase</span>
+        </a>
+      </h1>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="Index.html" class="logo">DeliverEase</a>
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="Index.html#home" class="navbar-link" data-nav-link>
+              <span>Home</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Index.html#about" class="navbar-link" data-nav-link>
+              <span>About Us</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Index.html#service" class="navbar-link" data-nav-link>
+              <span>Services</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item highlight">
+            <a href="OrderPage.html" class="navbar-link" data-nav-link>
+              <span>Place Order</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item highlight">
+            <a href="TrackOrder.html" class="navbar-link" data-nav-link>
+              <span>Track Order</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Index.html#footer" class="navbar-link" data-nav-link>
+              <span>Contact Us</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Login.html" class="navbar-link" data-nav-link>
+              <span>Log out</span>
+              <ion-icon name="chevron-forward"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+  
+  <div class="feedback-container">
+    <h2>Help Us Improve!!</h2>
+    <form id="feedbackForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="feedback">Your Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+      <label for="rating">Rate Your Experience:</label>
+      <div class="rating-container">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5" title="Satisfied">&#9733;</label>
+
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4" title=" Excellent">&#9733;</label>
+
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3" title="Good">&#9733;</label>
+
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2" title="Needs Improvement">&#9733;</label>
+
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1" title="Dissatisfied">&#9733;</label>
+      </div>
+      
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="container" id="footer">
+      <div class="footer-top section">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">DeliverEase</a>
+          <p class="footer-text">
+            At DeliverEase, we believe in going beyond logistics to revolutionize how the world connects and conducts business. 
+            Our mission is to transform the logistics landscape through innovation, dedication, and cutting-edge technology.
+          </p>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com" target="_blank" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Quick Links</p>
+          </li>
+
+          <li>
+            <a href="Index.html#about" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="Index.html#service" class="footer-link">Services</a>
+          </li>
+
+          <li>
+            <a href="OrderPage.html" target="_blank" class="footer-link">Place Order</a>
+          </li>
+
+          <li>
+            <a href="TrackOrder.html" class="footer-link">Track Order</a>
+          </li>
+
+          <li>
+            <a href="Terms.html" target="_blank" class="footer-link">Privacy Policy</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list" id="service-footer">
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="Index.html#service" class="footer-link">Multi-Stop Delivery</a>
+          </li>
+          
+          <li>
+            <a href="Index.html#service" class="footer-link">Road Freight</a>
+          </li>
+
+          <li>
+            <a href="Index.html#service" class="footer-link">Tracking</a>
+          </li>
+
+          <li>
+            <a href="Index.html#service" class="footer-link">Scheduling</a>
+          </li>
+
+          <li>
+            <a href="Index.html#service" class="footer-link">Routing</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li>
+            <a href="tel:+919867469877" class="footer-link">Phone: +919867469877</a>
+          </li>
+
+          <li>
+            <a href="https://www.google.co.in/maps/place/Balaji+Annex/" target="_blank" class="footer-link">
+              Office: B/303, Balaji Annexe Mira Road, Mumbai, Thane:401107
+            </a>
+          </li>
+
+          <li>
+            <a href="Feedback.html" target="_blank" class="footer-link">Feedback</a>
+          </li>
+
+          <li>
+            <a href="Terms.html" target="_blank" class="footer-link">Terms & Condition</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 DeliverEase. All Rights Reserved by <a href="#" class="copyright-link">Anish Tripathi</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Feedback.js"></script>
+</body>
+</html>

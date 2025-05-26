@@ -1,0 +1,225 @@
+:root {
+  --primary-color: #FFB800;
+  --primary-dark: #CC9200;
+  --white: #FFFFFF;
+  --gray-100: #F3F4F6;
+  --gray-200: #E5E7EB;
+  --gray-300: #D1D5DB;
+  --gray-800: #1F2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background:  #fdebc9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  padding: 1rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 4px;
+  background: var(--gray-200);
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.step.active {
+  background: var(--primary-color);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.form-container {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step-content {
+  display: none;
+}
+
+.step-content.active {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* This ensures two cards per row */
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.vehicle-card {
+  padding: 1.5rem;
+  border: 2px solid var(--gray-200);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vehicle-card:hover {
+  border-color: var(--primary-color);
+}
+
+.vehicle-card.selected {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--white);
+}
+
+.vehicle-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.route-details {
+  padding: 1.5rem;
+  background: var(--gray-100);
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.route-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.price-summary {
+  background: var(--gray-100);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.price-item.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-bottom: none;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--primary-color);
+}
+
+.delivery-estimate {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.location-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.use-current-location {
+  margin-top: 0.5rem;
+  background: var(--gray-800);
+}
+
+#addLocation {
+  background: var(--gray-800);
+  margin-top: 0.5rem;
+}
+
+.heading-container {
+  text-align: center;
+  padding: 15px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.main-heading {
+  color: #FFA000; /* Deep yellow */
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: 600;
+ 
+}
+
+.tagline {
+  font-size: 15px; /* Smaller size */
+  font-style: italic;
+  margin-top: 0;
+}
