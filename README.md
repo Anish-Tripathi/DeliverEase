@@ -3,8 +3,6 @@
 
 DeliverEase is a logistics simulation platform that allows users to place, track, and manage deliveries with a realistic and interactive interface. Designed as a pure frontend application, it demonstrates the full flow of a logistics system—from order placement to vehicle tracking—using only **HTML**, **CSS**, **JavaScript**, **Geolocation API**, and **OpenStreetMap**.
 
-> 🔧 Built without a backend, DeliverEase intelligently simulates logistics processes with real-world mapping and user interactions.
-
 ---
 
 ## ✨ Key Features
@@ -175,7 +173,7 @@ DeliverEase is a logistics simulation platform that allows users to place, track
 ```bash
 git clone https://github.com/Anish-Tripathi/DeliverEase.git
 cd DeliverEase
-<<<<<<< HEAD
+
 # Just open assets/html/index.html in your browser
 ```
 
@@ -212,10 +210,3 @@ DeliverEase/
 - Notification system for order status updates
 
 ---
-
-Edit
-# Clone the repo
-git clone https://github.com/Anish-Tripathi/DeliverEase.git
-
-# Make changes and push to your branch
->>>>>>> 1411c834af9d42b42c5a2342d6fe74332b8995b8
