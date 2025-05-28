@@ -1,5 +1,9 @@
 # DeliverEase – Simplifying Logistics, Smartly
 
+<p align="center">
+  <img src="screenshots/swapstay-logo.png" alt="SwapStay Logo" width="150" />
+</p>
+
 DeliverEase is a logistics simulation platform that allows users to place, track, and manage deliveries with a realistic and interactive interface. Designed as a pure frontend application, it demonstrates the full flow of a logistics system—from order placement to vehicle tracking—using only **HTML**, **CSS**, **JavaScript**, **Geolocation API**, and **OpenStreetMap**.
 
 ---
