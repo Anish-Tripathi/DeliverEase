@@ -38,6 +38,114 @@ DeliverEase is crafted to address multiple real-world inefficiencies and frictio
 
 ---
 
+## 🖼️ Preview
+
+<details>
+  <summary><strong>🏠 Home Page</strong></summary>
+
+  <table align="center" style="margin-top: 10px;">
+    <tr>
+      <td align="center">
+        <img src="./screenshots/home-hero.png" alt="Home Hero" width="500" height="340"/><br/>
+        <strong>🎯 Hero Section</strong>
+      </td>
+      <td align="center">
+        <img src="./screenshots/home-how-it-works.png" alt="How It Works" width="500" height="340"/><br/>
+        <strong>📚 How It Works</strong>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="./screenshots/home-features.png" alt="Features Section" width="500" height="340"/><br/>
+        <strong>⚙️ Features Overview</strong>
+      </td>
+      <td align="center">
+        <img src="./screenshots/home-footer.png" alt="Footer" width="500" height="340"/><br/>
+        <strong>📩 Footer & Navigation</strong>
+      </td>
+    </tr>
+  </table>
+</details>
+
+---
+
+<details>
+  <summary><strong>📦 Place Order Flow</strong></summary>
+
+  <table align="center" style="margin-top: 10px;">
+    <tr>
+      <td align="center">
+        <img src="./screenshots/place-order.png" alt="Place Order Page" width="500" height="340"/><br/>
+        <strong>🛒 Parcel Type, Pickup, & Stops</strong>
+      </td>
+      <td align="center">
+        <img src="./screenshots/select-vehicle.png" alt="Select Vehicle" width="500" height="340"/><br/>
+        <strong>🚛 Vehicle Selection</strong>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="./screenshots/route-summary.png" alt="Route Summary" width="500" height="340"/><br/>
+        <strong>🧭 Route & Cost Calculation</strong>
+      </td>
+      <td align="center">
+        <img src="./screenshots/price-summary.png" alt="Price Summary" width="500" height="340"/><br/>
+        <strong>➕ Price Summary</strong>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="./screenshots/payment.png" alt="Payment Options" width="500" height="340"/><br/>
+        <strong>💳 Payment & Receipt</strong>
+      </td>
+      <td align="center">
+        <img src="./screenshots/reciept.png" alt="Booking Receipt" width="500" height="340"/><br/>
+        <strong>📍 Booking Receipt</strong>
+      </td>
+    </tr>
+  </table>
+</details>
+
+---
+
+<details>
+  <summary><strong>🛰️ Track Order</strong></summary>
+
+  <table align="center" style="margin-top: 10px;">
+    <tr>
+      <td align="center">
+        <img src="./screenshots/order-card.png" alt="Order Cards" width="500" height="340"/><br/>
+        <strong>📦 View & Filter Orders</strong>
+      </td>
+      <td align="center">
+        <img src="./screenshots/track-order.png" alt="Tracking Map" width="500" height="340"/><br/>
+        <strong>📍 Animated Route Tracking</strong>
+      </td>
+    </tr>
+  </table>
+</details>
+
+---
+
+<details>
+  <summary><strong>📋 Feedback & Info Pages</strong></summary>
+
+  <table align="center" style="margin-top: 10px;">
+    <tr>
+      <td align="center">
+        <img src="./screenshots/feedback.png" alt="Feedback Page" width="500" height="340"/><br/>
+        <strong>✍️ Submit Feedback</strong>
+      </td>
+      <td align="center">
+        <img src="./screenshots/terms.png" alt="Terms & Conditions" width="500" height="340"/><br/>
+        <strong>📜 Terms & Conditions</strong>
+      </td>
+    </tr>
+  </table>
+</details>
+
+---
+
 ## ✨ Key Features
 
 ### 📦 Order Placement Flow
@@ -98,115 +206,6 @@ DeliverEase is crafted to address multiple real-world inefficiencies and frictio
 | Geolocation API | Detect user’s current location      |
 | OpenStreetMap   | Render maps and calculate routes    |
 | Leaflet.js      | Map rendering and marker animations |
-
----
-
-## 🖼️ Preview
-
-### 🏠 Home Page
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="./screenshots/home-hero.png" alt="Home Hero" width="500" height="340"/><br/>
-      <strong>🎯 Hero Section</strong>
-    </td>
-    <td align="center">
-      <img src="./screenshots/home-how-it-works.png" alt="How It Works" width="500" height="340"/><br/>
-      <strong>📚 How It Works</strong>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="./screenshots/home-features.png" alt="Features Section" width="500" height="340"/><br/>
-      <strong>⚙️ Features Overview</strong>
-    </td>
-    <td align="center">
-      <img src="./screenshots/home-footer.png" alt="Footer" width="500" height="340"/><br/>
-      <strong>📩 Footer & Navigation</strong>
-    </td>
-  </tr>
-</table>
-
----
-
-### 📦 Place Order Flow
-
-<details>
-  <summary><strong>📦 Order Process</strong></summary>
-
-  <table align="center">
-    <tr>
-      <td align="center">
-        <img src="./screenshots/place-order.png" alt="Place Order Page" width="500" height="340"/><br/>
-        <strong>🛒 Parcel Type, Pickup, & Stops</strong>
-      </td>
-      <td align="center">
-        <img src="./screenshots/select-vehicle.png" alt="Select Vehicle" width="500" height="340"/><br/>
-        <strong>🚛 Vehicle Selection</strong>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="./screenshots/route-summary.png" alt="Route Summary" width="500" height="340"/><br/>
-        <strong>🧭 Route & Cost Calculation</strong>
-      </td>
-      <td align="center">
-        <img src="./screenshots/price-summary.png" alt="Price Summary" width="500" height="340"/><br/>
-        <strong>➕ Price Summary</strong>
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="./screenshots/payment.png" alt="Payment Options" width="500" height="340"/><br/>
-        <strong>💳 Payment & Receipt</strong>
-      </td>
-      <td align="center">
-        <img src="./screenshots/reciept.png" alt="Booking Receipt" width="500" height="340"/><br/>
-        <strong>📍 Booking Receipt</strong>
-      </td>
-    </tr>
-  </table>
-</details>
-
----
-
-<details>
-  <summary><strong>🛰️ Track Order</strong></summary>
-
-  <table align="center">
-    <tr>
-      <td align="center">
-        <img src="./screenshots/order-card.png" alt="Order Cards" width="500" height="340"/><br/>
-        <strong>📦 View & Filter Orders</strong>
-      </td>
-      <td align="center">
-        <img src="./screenshots/track-order.png" alt="Tracking Map" width="500" height="340"/><br/>
-        <strong>📍 Animated Route Tracking</strong>
-      </td>
-    </tr>
-  </table>
-</details>
-
----
-
-<details>
-  <summary><strong>📋 Feedback & Info Pages</strong></summary>
-
-  <table align="center">
-    <tr>
-      <td align="center">
-        <img src="./screenshots/feedback.png" alt="Feedback Page" width="500" height="340"/><br/>
-        <strong>✍️ Submit Feedback</strong>
-      </td>
-      <td align="center">
-        <img src="./screenshots/terms.png" alt="Terms & Conditions" width="500" height="340"/><br/>
-        <strong>📜 Terms & Conditions</strong>
-      </td>
-    </tr>
-  </table>
-</details>
-
 
 ---
 
