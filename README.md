@@ -27,36 +27,6 @@ DeliverEase is a logistics simulation platform that allows users to place, track
 
 ---
 
-## 🚩 The Problems DeliverEase Solves
-
-DeliverEase is crafted to address multiple real-world inefficiencies and friction points in the local logistics ecosystem. Here's how it tackles common challenges:
-
-### 🚧 Fragmented Order Systems
-**Problem:** Most delivery services lack a unified interface for managing multi-stop deliveries, vehicle selection, and payment integration.  
-**Solution:** DeliverEase offers an end-to-end parcel flow — from parcel type selection to payment — all in one seamless UI.
-
-### 📍 Inaccurate Location Handling
-**Problem:** Manually entering pickup or stop addresses leads to errors and inefficiencies.  
-**Solution:** Uses the Geolocation API to auto-detect current pickup location and simplify address input.
-
-### 📦 Parcel-Type Neglect
-**Problem:** Perishable or fragile items often get mishandled due to lack of delivery context.  
-**Solution:** Users explicitly label parcel types (perishable, fragile, etc.), ensuring appropriate handling and optimized route/vehicle selection.
-
-### 🛣️ Inefficient Route Planning
-**Problem:** Manual route planning doesn’t account for delivery stop sequencing or shortest paths.  
-**Solution:** Dynamically calculates the shortest delivery route using delivery points and assigns the best vehicle type accordingly.
-
-### 🔄 Lack of Real-Time Transparency
-**Problem:** Users can’t visualize where their order is or how it’s progressing.  
-**Solution:** Offers animated tracking maps, showing vehicle movement and delivery path with detailed step-by-step history.
-
-### 💸 Payment Hassles
-**Problem:** Many systems don’t support flexible or multiple payment options.  
-**Solution:** Accepts Card, UPI, and Cash, with instant receipt generation and print option.
-
----
-
 ## 🖼️ Preview
 
 > If any uploaded image appears scaled or unclear, please click on the image to view it in full resolution for better clarity.
@@ -165,6 +135,36 @@ DeliverEase is crafted to address multiple real-world inefficiencies and frictio
     </tr>
   </table>
 </details>
+
+---
+
+## 🚩 The Problems DeliverEase Solves
+
+DeliverEase is crafted to address multiple real-world inefficiencies and friction points in the local logistics ecosystem. Here's how it tackles common challenges:
+
+### 🚧 Fragmented Order Systems
+**Problem:** Most delivery services lack a unified interface for managing multi-stop deliveries, vehicle selection, and payment integration.  
+**Solution:** DeliverEase offers an end-to-end parcel flow — from parcel type selection to payment — all in one seamless UI.
+
+### 📍 Inaccurate Location Handling
+**Problem:** Manually entering pickup or stop addresses leads to errors and inefficiencies.  
+**Solution:** Uses the Geolocation API to auto-detect current pickup location and simplify address input.
+
+### 📦 Parcel-Type Neglect
+**Problem:** Perishable or fragile items often get mishandled due to lack of delivery context.  
+**Solution:** Users explicitly label parcel types (perishable, fragile, etc.), ensuring appropriate handling and optimized route/vehicle selection.
+
+### 🛣️ Inefficient Route Planning
+**Problem:** Manual route planning doesn’t account for delivery stop sequencing or shortest paths.  
+**Solution:** Dynamically calculates the shortest delivery route using delivery points and assigns the best vehicle type accordingly.
+
+### 🔄 Lack of Real-Time Transparency
+**Problem:** Users can’t visualize where their order is or how it’s progressing.  
+**Solution:** Offers animated tracking maps, showing vehicle movement and delivery path with detailed step-by-step history.
+
+### 💸 Payment Hassles
+**Problem:** Many systems don’t support flexible or multiple payment options.  
+**Solution:** Accepts Card, UPI, and Cash, with instant receipt generation and print option.
 
 ---
 
