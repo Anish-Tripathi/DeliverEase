@@ -59,6 +59,8 @@ DeliverEase is crafted to address multiple real-world inefficiencies and frictio
 
 ## 🖼️ Preview
 
+> If any uploaded image appears scaled or unclear, please click on the image to view it in full resolution for better clarity.
+
 <details>
   <summary><strong>🏠 Home Page</strong></summary>
 
