@@ -8,6 +8,25 @@ DeliverEase is a logistics simulation platform that allows users to place, track
 
 ---
 
+# Table of Contents
+
+- [🌐 Live Demo](#-live-demo)
+- [🚩 The Problems DeliverEase Solves](#-the-problems-deliverease-solves)
+- [🖼️ Preview](#️-preview)
+- [✨ Key Features](#-key-features)
+- [🧱 Tech Stack](#-tech-stack)
+- [🛠️ Setup Instructions](#️-setup-instructions)
+- [🧩 Project Structure](#-project-structure)
+- [📈 Future Enhancements](#-future-enhancements)
+
+---
+## 🌐 Live Demo
+
+> 🔗 **Live URL:** Coming Soon  
+> 📽️ **Demo Video:** [Watch Here](#) _(Coming Soon)_
+
+---
+
 ## 🚩 The Problems DeliverEase Solves
 
 DeliverEase is crafted to address multiple real-world inefficiencies and friction points in the local logistics ecosystem. Here's how it tackles common challenges:
